@@ -15,7 +15,7 @@ const AboutMe = () => {
           <p>
             Proficient in a range of web technologies, including <strong style={{ color: '#f75c03' }}>HTML/CSS, JavaScript, React.Js, Node.Js , MongoDB.</strong> and responsive design principles. Solid foundation in <strong style={{ color: '#f75c03' }}>backend technologies</strong> and eager to contribute adaptability and problem-solving abilities to <strong style={{ color: '#f75c03' }}>dynamic development projects.</strong>
           </p>
-          <a href="../assets/JattinResume.pdf" download className="download-cv-button">
+          <a href="https://drive.google.com/file/d/1htgW0ANC0_-MHrWD1kxd99ZgDtaN5AcW/view" download className="download-cv-button">
             Download CV
           </a>
         </div>
