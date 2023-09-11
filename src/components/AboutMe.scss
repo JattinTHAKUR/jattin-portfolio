@@ -1,0 +1,74 @@
+/* AboutMe.scss */
+
+.about-me {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    
+    .container {
+      max-width: 1000px; /* Set the maximum width of the container */
+      width: 100%;
+      padding: 0 20px; /* Leave 20px of space from left and right */
+      display: flex;
+      align-items: center;
+  
+      .text-container {
+        text-align: center;
+        // justify-content: center;
+        flex: 1;
+        padding: 0 20px;
+  
+        h2 {
+          font-size: 28px; /* Increase the font size */
+          margin-bottom: 10px;
+          text-align: center; /* Center-align the heading */
+        //   text-decoration: none;
+        
+          &:hover{
+            text-decoration: underline;
+            text-decoration-color: #f26440;
+          }
+
+        }
+  
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 20px;
+        }
+  
+        .download-cv-button {
+          flex: 1; /* Expand the button to take available space */
+          display: flex;
+          justify-content: center; /* Center horizontally */
+          align-items: center; /* Center vertically */
+          background-color: #f75c03;
+          color: #fff;
+          padding: 10px 20px;
+          font-size: 16px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          text-decoration: none;
+          display: inline-block;
+  
+          &:hover {
+            background-color: #ac5000;
+          }
+        }
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      /* Adjust padding for text container */
+      .text-container {
+        padding: 0 10px;
+      }
+    }
+  }
+  
+  /* Prevent horizontal overflow */
+  body {
+    overflow-x: hidden;
+  }
+  

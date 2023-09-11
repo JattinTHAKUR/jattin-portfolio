@@ -1,0 +1,34 @@
+npm i framer-motion react-icons sass react-hot-toast typewriter-effect react-responsive-carousel 
+
+import React from 'react';
+
+const Skills = () => {
+  const skills = [
+    { name: 'HTML', image: 'https://cdn-icons-png.flaticon.com/256/174/174854.png' },
+    { name: 'CSS', image: 'https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png' },
+    { name: 'JavaScript', image: 'https://e7.pngegg.com/pngimages/602/440/png-clipart-javascript-open-logo-number-js-angle-text-thumbnail.png' },
+    { name: 'React', image: 'https://w7.pngwing.com/pngs/235/872/png-transparent-react-computer-icons-redux-javascript-others-logo-symmetry-nodejs-thumbnail.png' },
+    { name: 'Next.js', image: 'https://www.svgrepo.com/show/354113/nextjs-icon.svg' },
+    { name: 'Node.js', image: 'https://w1.pngwing.com/pngs/885/534/png-transparent-green-grass-nodejs-javascript-react-mean-angularjs-logo-symbol.png' },
+    { name: 'tailwind css', image: 'https://image.pngaaa.com/388/3920388-middle.png' },
+    { name: 'Bootstrap css', image: 'https://w7.pngwing.com/pngs/976/131/png-transparent-bootstrap-framework-logo-dart-mobile-developer-programming-programming-language-interface-3d-icon-thumbnail.png' },
+    { name: 'Material UI', image: 'https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png' },
+    { name: 'Chakra UI', image: 'https://image.pngaaa.com/704/7959704-middle.pnghttps://image.pngaaa.com/704/7959704-middle.png' },
+  ];
+
+  return (
+    <div className="skills-box">
+      <h2>Skills</h2>
+      <div className="skills-container">
+        {skills.map((skill, index) => (
+          <div key={index} className="skill-item">
+            <img src={skill.image} alt={skill.name} />
+            <span>{skill.name}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Skills;

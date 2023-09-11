@@ -1,0 +1,110 @@
+#timeline {
+  h1 { /* Use 'h1' instead of '.h1' to target the <h1> tag */
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 0; /* Reset margin to remove default spacing */
+    
+    &:hover{
+      text-decoration: underline;
+      text-decoration-color: #f26440;
+    }
+  }
+  padding: 10px;
+  margin: 20px;
+  width: 100%;
+  height: 100vh;
+  background-color: #fef2f2;
+  overflow-y: auto; 
+
+  .timelineBox {
+    width: 100%;
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%; /* Change height to min-height */
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 6px;
+      background-color: #292b46;
+      top: 8%;
+      bottom: 0%;
+      left: 50%;
+      margin-left: -3px;
+    }
+  }
+
+  .timelineItem {
+    padding: 1rem 3rem;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+
+    &:nth-child(odd) {
+      text-align: right;
+
+      &::after {
+        animation: upanddown 0.3s infinite ease-in alternate;
+      }
+    }
+    &:nth-child(even) {
+      text-align: left;
+      &::after {
+        animation: upanddown 0.5s infinite ease-in alternate;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -17px;
+      background-color: #fef2f2;
+      border: 4px solid #292b46;
+      top: 45px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    > div {
+      padding: 20px 30px;
+      background-color: #292b46;
+      color: #fef2f2;
+      border-radius: 6px;
+    }
+  }
+
+  .leftTimeline {
+    left: 0%;
+  }
+  .rightTimeline {
+    left: 50%;
+    &::after {
+      left: -16px;
+    }
+  }
+}
+.floatingCard h2{
+  text-align: center;
+}
+.floatingCard {
+  /* Other styles */
+  // opacity: 0;
+  transform: translateY(-20px); /* Initial position offscreen */
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Add transition properties */
+  // position: relative;
+  overflow-y: hidden;
+}
+
+.timelineItem:hover .floatingCard {
+  // opacity: 1;
+  transform: translateY(0); /* Move the card to its final position */
+  transition: opacity 0.5s ease-in-out, transform 0.8s ease-in-out; /* Add transition properties */
+}
