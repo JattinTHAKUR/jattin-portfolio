@@ -1,18 +1,18 @@
+/* Default styles for the #work section */
 #work {
   width: 100%;
   height: 100vh;
+
   > h2 {
-    font: 700 2.5rem $text2;
+    font: 700 2rem $text2;
     width: fit-content;
-    // border-bottom: 1px solid $color6_1;
     padding: 0.5rem;
     margin: auto;
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
       text-decoration-color: #f26440;
     }
-
-
   }
 
   > section {
@@ -42,7 +42,7 @@
       > img {
         border-radius: 10px;
         width: 50%;
-        object-fit:contain;
+        object-fit: contain;
         background: transparent;
       }
 
@@ -58,17 +58,26 @@
           line-height: 180%;
           margin: 2rem;
         }
+
         > a {
           background-color: $color3;
           padding: 0.7rem 2rem;
           margin: 2rem;
           color: $color4;
           transition: all 0.5s;
+
           &:hover {
             background-color: $color3_1;
           }
         }
       }
     }
+  }
+}
+
+/* Media query to hide the <p> tag on mobile screens */
+@media screen and (max-width: 800px) {
+  #work > section > article > .workItem > aside > p {
+    display: none;
   }
 }

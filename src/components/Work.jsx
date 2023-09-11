@@ -12,13 +12,13 @@ const data = [
   {
     title: "Real Time Weather App",
     imgSrc: "https://cdn3.iconfinder.com/data/icons/luchesa-vol-9/128/Weather-512.png",
-    description: "Get real-time weather updates for any location. Key features include user-friendly interface, location-based search, visual weather data and (Celsius/Fahrenheit/Kelvin)options.",
+    description: "Get real-time weather updates for any location. Key features include user-friendly interface, location-based search, (Celsius/Fahrenheit/Kelvin)options.",
     url: "https://weather-app-two-ashen.vercel.app/",
   },
   {
     title: "Video Playing App",
     imgSrc: "https://lh3.googleusercontent.com/osEvn6xL6LcVkYnnh0q64vta0eYsGIm67m3d_cW5Hi2NC-aIVj2MM6BrwpItZzg6UXc",
-    description: " Immerse yourself in stunning videos with our Simple Video Player App. Explore collection of pre-uploaded high-definition content in a sleek and user-friendly interface.",
+    description: " Immerse yourself in stunning videos with our Simple Video Player App.Collection of pre-uploaded high-definition content in user-friendly interface.",
     url: "https://video-player-hub.vercel.app/videos",
   },
 ];
