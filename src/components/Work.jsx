@@ -31,7 +31,7 @@ const Work = () => {
         <article>
           <Carousel
             showArrows={true}
-            showIndicators={true}
+            showIndicators={false}
             showStatus={false}
             showThumbs={false}
             interval={2000}
